@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,21 +13,22 @@
 .banner{
     height: 100vh;
     width: 100%;
-    background-image: url(../assets/bannerSite2.png);
+    background-image: url(../assets/bannerSiteFundo.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     position: relative;
+    justify-content: space-evenly;
     /* align-items: flex-end; */
     /* position: relative; */
 }
 
 .meninasConteudo{
     width: 1100px;
-    height: 1141px;
+    height: 969px;
     background-image: url(../assets/meninas2.png);
     background-repeat: no-repeat;
-    background-size: 100% 82%;
+    background-size: 85% 80%;
     background-position: bottom;
     position: relative;
 }
@@ -46,14 +48,15 @@
 
 .textoBanner{
     height: 60%;
-    width: 500px;
+    width: 700px;
     display: flex;
     justify-content: space-evenly;
     /* background-color: #fff; */
-    font-size: 28px;
-    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-family: 'Ropa Sans', sans-serif;
     color: #85ffa5;
     flex-direction: column;
+    align-items: center;
 }
 
 .textoBanner a{
@@ -77,6 +80,18 @@
 
 
 /* ----------------FIM BANNER---------------------- */
+
+
+
+/* ----------------INÍCIO SOBRE-------------------- */
+
+.sobreProjeto{
+    height: 800px;
+    
+}
+
+/* -----------------FIM SOBRE---------------------- */
+
 
 /* header{
     background-color: #f9f9f9;
@@ -109,9 +124,8 @@
 
 
 
-@media (max-width: 1000px){
-    /* .banner{
-        height: 800px;
-        background-size: 100% 60%;
-    } */
-}
+/* @media (max-width: 1000px){
+    .banner{
+        
+    }
+} */

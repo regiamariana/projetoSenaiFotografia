@@ -45,6 +45,11 @@ function Home(){
                         </div>
                         
                    </div>
+
+
+                   <div className='sobreProjeto'>
+                        
+                   </div>
                </main>
            </body>
         </div>
