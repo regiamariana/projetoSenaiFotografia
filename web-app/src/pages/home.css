@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,14 +7,78 @@
 }
 
 
-.banner{
-    height: 105vh;
-    width: 100%;
-    background-image: url(../assets/bannerSite.jpg);
+/* ----------------INÍCIO BANNER----------------- */
 
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/bannerSite2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    /* align-items: flex-end; */
+    /* position: relative; */
 }
 
-header{
+.meninasConteudo{
+    width: 1100px;
+    height: 1141px;
+    background-image: url(../assets/meninas2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 82%;
+    background-position: bottom;
+    position: relative;
+}
+
+.meninasConteudo img{
+    width: 95%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.textoBannerAnterior{
+    height: 100%;
+    display: flex;
+    align-items:flex-end;
+}
+
+.textoBanner{
+    height: 60%;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #fff; */
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+    color: #85ffa5;
+    flex-direction: column;
+}
+
+.textoBanner a{
+    text-decoration: none;
+    color: #fff;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 40px;
+}
+
+.flechinhas{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+
+
+/* ----------------FIM BANNER---------------------- */
+
+/* header{
     background-color: #f9f9f9;
 }
 #check{
@@ -39,7 +105,7 @@ header{
 #icone img{
     height: 50px;
     width: 50px;
-}
+} */
 
 
 
