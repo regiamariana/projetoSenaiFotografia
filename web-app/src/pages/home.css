@@ -86,8 +86,9 @@
 /* ----------------INÍCIO SOBRE-------------------- */
 
 .sobreProjeto{
+    width: 100%;
     height: 800px;
-    
+    background-image: url(../assets/backgroundVerde.png);
 }
 
 /* -----------------FIM SOBRE---------------------- */
