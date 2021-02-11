@@ -6,9 +6,13 @@ import fundo from '../assets/bannerSite.jpg'
 import titulo from '../assets/titulo.png'
 import camera from '../assets/camerinha.png'
 import flecha from '../assets/flechasBaixo.png'
+import barras from '../assets/bars.png'
+import './home2.js'
 function Home(){
+    
+
     return(
-        <div >
+        <div>
            <body>
                <header>
                     {/* <input type="checkbox" id="check" />
@@ -25,6 +29,36 @@ function Home(){
 
                <main>
                    <div className="banner">
+
+
+
+
+                   {/* <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                             <div class="overlay-content">
+                                <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                                                 </div>
+                                                    </div>
+                                                    <h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<a onclick="openNav()">open</a> */}
+
+
+
+
+
+
+
+
+                        <div className="barras">
+                            
+                            <img src={barras} />]
+                            
+                        </div>
                         <div className="meninasConteudo">
                         <img src={titulo}/>
                         
@@ -53,6 +87,8 @@ function Home(){
                </main>
            </body>
         </div>
+
     )
+    
 }
 export default Home;
