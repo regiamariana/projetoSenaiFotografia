@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App'
+
 import Home from './pages/home';
 import Galeria from './pages/galeria';
-import Nav from './pages/nav'
+
 import reportWebVitals from './reportWebVitals';
 
 
-import { Route, Link, BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch} from "react-router-dom";
 
 const routing =(
   <Router>
@@ -16,7 +16,6 @@ const routing =(
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/galeria' component={Galeria} />
-        <Route path='/nav' component={Nav} />
       </Switch>
     </div>
   </Router>
