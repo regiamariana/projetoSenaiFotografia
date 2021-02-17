@@ -4,6 +4,7 @@ import './index.css';
 
 import Home from './pages/home';
 import Galeria from './pages/galeria';
+import GaleriaCerta from './pages/galeriaCerta'
 
 import reportWebVitals from './reportWebVitals';
 
@@ -15,7 +16,8 @@ const routing =(
     <div>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/galeria' component={Galeria} />
+        {/* <Route path='/galeria' component={Galeria} /> */}
+        <Route path='/galeria' component={GaleriaCerta} />
       </Switch>
     </div>
   </Router>

@@ -16,6 +16,7 @@
     height: 100vh;
     width: 100%;
     background-image: url(../assets/bannerSiteFundo.jpg);
+    z-index: -2;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -67,7 +68,7 @@
     display: flex;
     justify-content: space-evenly;
     /* background-color: #fff; */
-    font-size: 47px;
+    font-size: 250%;
     font-family: 'Poppins', sans-serif;
     color: #85ffa5;
     flex-direction: column;

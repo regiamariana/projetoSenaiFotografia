@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    font-size: 16px;
+}
+
+$th_pink: #e84a5f;
+$th_dark: #2a363b;
+
+// main {
+//     min-width: 200px;
+//     max-width: 800px;
+//     margin: 80px auto;
+//     padding: 10px;
+
+//     .wrap {
+//         padding: 40px 20px;
+//         background-color: #fff;
+//         //box-shadow:0 0 10px 2px rgba(0,0,0,.2);
+//     }
+
+//     .title {
+//         font-size: 2em;
+//         text-align: center;
+//         margin: 20px auto 40px;
+//         text-transform: uppercase;
+//     }
+// }
+
+.textoNav{
+    // background-color: #fff;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 21%;
+    right: 15%;
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+    // transition: all 5s ease-in-out;
+}
+
+
+
+// .App, html{
+//     background-color: blue;
+//     height: 100%;
+//     margin: auto;
+// }
+
+header {
+    z-index: 2;
+}
+
+header {
+    nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url(../assets/bannerSiteFundo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1080px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        max-height: 100%;
+        
+        .ulAnterior{
+            
+            width: 100%;
+            height: 100%;
+            position: relative;
+            // background-color: blue;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            // padding: 0;
+            // margin: 0;
+            position: absolute;
+            left: 25%;
+            
+            transition: all 0.3s ease-in-out;
+            transform: translateX(-50%);
+            height: 70%;
+            z-index: 2;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 30%;
+            // background-color: #fff;
+            li {
+                transform: translateY(50px);
+                opacity: 0;
+                padding-top: 15px;
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    // display: block;
+                    font-size: 650%;
+                    text-decoration: none;
+                    // padding: 20px 0;
+                    // text-align:left;
+                    color: #71fe95;
+                    font-weight: bold;
+                    transition: all 0.3s ease-in-out;
+                    
+
+                    &:hover {
+                        border-style: solid;
+                        border-width: 0px 0px 0px 5px;
+                        border-color: greenyellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.toggle-btn {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
+
+    .bar {
+        width: 50px;
+        height: 3px;
+        margin: 12px auto;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+
+        &:nth-child(2) {
+            width: 30px;
+        }
+    }
+}
+
+#toggle:checked {
+    & ~ nav {
+        opacity: 1;
+        visibility: visible;
+
+        ul {
+            top: 10%;
+
+            li {
+                transform: translateY(0px);
+                opacity: 1;
+
+                @for $i from 1 through 4 {
+                    $t: $i * 0.1;
+                    &:nth-child(#{$i}) {
+                        transition: all 1s cubic-bezier(0.6, 0, 0.8, 1.5) #{$t}s;
+                    }
+                }
+            }
+        }
+    }
+
+    & + label.toggle-btn {
+        .bar {
+            background-color: white;
+
+            &:nth-child(2) {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            &:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-19px) rotate(-45deg);
+            }
+        }
+    }
+}
