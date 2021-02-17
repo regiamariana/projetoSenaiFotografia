@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import titulo from '../assets/titulo.png'
 import camera from '../assets/camerinha.png'
 import flecha from '../assets/flechasBaixo.png'
-import barras from '../assets/bars.png'
+// import barras from '../assets/bars.png'
 import jovana from '../assets/jovana.png'
 import imgTitulo from '../assets/tituloSobre.png'
 

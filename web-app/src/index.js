@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import Home from './pages/home';
-import Galeria from './pages/galeria';
+// import Galeria from './pages/galeria';
 import GaleriaCerta from './pages/galeriaCerta'
 
 import reportWebVitals from './reportWebVitals';
