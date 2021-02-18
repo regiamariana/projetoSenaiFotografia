@@ -10,7 +10,8 @@ import titulo from '../assets/titulo.png'
 import camera from '../assets/camerinha.png'
 import flecha from '../assets/flechasBaixo.png'
 // import barras from '../assets/bars.png'
-import jovana from '../assets/jovana.png'
+// import jovana from '../assets/jovana.png'
+
 import imgTitulo from '../assets/tituloSobre.png'
 
 
@@ -57,9 +58,10 @@ function Home() {
                     </div>
 
 
+                    {/* ------------INÍCIO SOBRE O PROJETO------------ */}
                     <div className='sobreProjetoBackground'>
                         <div className='imagemSobre'>
-                            <img src={jovana} alt="a" />
+                            {/* <img src={jovana} alt="a" /> */}
                         </div>
                         <div className='textoSobre'>
                             <img src={imgTitulo} alt="a" />
@@ -68,6 +70,10 @@ function Home() {
                             </div>
                         </div>
                     </div>
+                    {/* ------------FIM SOBRE O PROJETO-------------- */}
+
+
+
                 </main>
                 <header>
                     <input type='checkbox' id='toggle' style={{ display: "none" }} />
